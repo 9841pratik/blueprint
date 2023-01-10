@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import 'abstracts/variable';
+
+@import 'mixins/services';
+
+@import 'components/button';
+@import 'components/header';
+@import 'components/tabs';
+@import 'components/title';
+
+@import 'pages/homepage';
+@import 'pages/contact';
+@import 'pages/thankyou';
+
+// Global Style
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100vw;
+  font-family: $default-font;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  padding: 0 40px;
+}
+
+// bootstrap grid container width overrides or larger viewports
+.container {
+  @media screen and (min-width: 1400px) {
+    max-width: 1240px;
+  }
+}
+
+.services .img-box {
+  width: 535px;
+  @media screen and (min-width: 650px) {
+    height: 322px !important;
+  }
+  &__desc {
+    max-width: 470px;
+    margin: 0 auto;
+    @media screen and (max-width: 650px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.services {
+  img.shadow-bg {
+    height: 730px !important;
+    top: -180px !important;
+  }
+}

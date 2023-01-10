@@ -1,0 +1,32 @@
+.thankyou {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 100px;
+  text-align: center;
+  h1 {
+    font-weight: 900;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: $light-grey;
+  }
+  .btn {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thankyou {
+    padding: 60px 10px;
+  }
+}
+
+.thankyou_page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.thankyou__wrapper {
+  flex-grow: 1;
+}

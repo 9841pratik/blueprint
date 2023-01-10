@@ -1,0 +1,49 @@
+@mixin serviceContentType2 {
+    .background {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            &.big-circle-bg {
+                // bottom: 70px;
+                top: 105px;
+                right: -30px;
+                width: 300px;
+                height: 300px;
+            }
+            &.small-circle-bg {
+                top: -83px;
+                right: 560px;
+                width: 182px;
+                height: 182px;
+            }
+            &.shadow-bg {
+                width: 90vw;
+                height: 1000px;
+                right: -30%;
+                top: -190px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .img-box {
+        max-width: 100%;
+        height: 385px;
+        margin: 10px auto 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top center;
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $text-dark;
+    }
+}
